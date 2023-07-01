@@ -29,7 +29,13 @@ export const fetchCompaniesByCountry = (country) => async (dispatch) => {
     const response = await axios.get(`https://fakerapi.it/api/v1/companies?_quantity=200&_seed=42069`);
     const data = response.data.data;
 
-    const companies = data.filter((company) => company.country === country);
+    const countryCompanies = data.reduce((acc, company) => {
+      const country = company.country;
+      acc[country] = [...(acc[country] || []), company];
+      return acc;
+    }, {});
+
+    const companies = countryCompanies[country] || [];
 
     dispatch(setCompanies(companies));
   } catch (error) {

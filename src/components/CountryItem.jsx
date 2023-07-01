@@ -34,7 +34,7 @@ export const CountryItem = ({ country }) => {
   const imagePath = getImagePath(isoCode);
 
   // Remove text between parentheses and trim whitespace
-  const displayName = name.replace(/\s*\([^)]*\)/g, '').trim();
+  const displayName = name; //;
 
   useEffect(() => {
     // Check if folder exists
@@ -60,7 +60,7 @@ export const CountryItem = ({ country }) => {
         {/* Adicione um contêiner ao redor da segunda <div> */}
         <div className="absolute bottom-0 right-2 flex justify-end items-end">
           <div className="flex flex-col items-end">
-            <h2 className="text-md font-bold text-right text-white mb-2">{displayName.toUpperCase()}</h2>
+            <h2 className="text-md font-bold text-right text-white mb-2">{displayName.toUpperCase().replace(/\s*\([^)]*\)/g, '').trim()}</h2>
             <p className="text-white">{companyCount}</p>
           </div>
         </div>

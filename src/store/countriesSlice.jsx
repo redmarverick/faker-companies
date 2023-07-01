@@ -29,22 +29,16 @@ export const fetchCountries = () => async (dispatch) => {
     const response = await axios.get(`https://fakerapi.it/api/v1/companies?_quantity=200&_seed=42069`);
     const data = response.data.data;
 
-    const countries = [];
-
-    data.forEach((company) => {
+    const countryCounts = data.reduce((acc, company) => {
       const country = company.country;
+      acc[country] = (acc[country] || 0) + 1;
+      return acc;
+    }, {});
 
-      const existingCountry = countries.find((c) => c.name === country);
-
-      if (existingCountry) {
-        existingCountry.companyCount++;
-      } else {
-        countries.push({
-          name: country,
-          companyCount: 1,
-        });
-      }
-    });
+    const countries = Object.entries(countryCounts).map(([name, companyCount]) => ({
+      name,
+      companyCount,
+    }));
 
     // Sort the countries alphabetically by name
     countries.sort((a, b) => a.name.localeCompare(b.name));
