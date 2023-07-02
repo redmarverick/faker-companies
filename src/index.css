@@ -80,7 +80,6 @@
   font-stretch: condensed;
 }
 
-
 body {
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -89,15 +88,22 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
 }
 
-.country-item:nth-child(4n+1), .country-item:nth-child(4n+4) {
+.country-item:nth-child(4n+1),
+.country-item:nth-child(4n+4) {
   background-color: rgb(222 72 131); /* bg-pink-500 */
 }
 
-.country-item:nth-child(4n+2), .country-item:nth-child(4n+3) {
+.country-item:nth-child(4n+2),
+.country-item:nth-child(4n+3) {
   background-color: rgb(208 67 120); /* bg-pink-600 */
 }
 

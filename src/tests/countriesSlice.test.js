@@ -8,10 +8,8 @@ import countriesReducer, {
 jest.mock('axios');
 
 describe('CountriesSlice', () => {
-  let store;
-
   beforeEach(() => {
-    store = configureStore({
+    configureStore({
       reducer: {
         countries: countriesReducer,
       },

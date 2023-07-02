@@ -8,10 +8,8 @@ import companiesReducer, {
 jest.mock('axios');
 
 describe('CompaniesSlice', () => {
-  let store;
-
   beforeEach(() => {
-    store = configureStore({
+    configureStore({
       reducer: {
         companies: companiesReducer,
       },
@@ -28,7 +26,6 @@ describe('CompaniesSlice', () => {
       };
 
       const selectedCompanies = selectCompanies(state);
-      console.log(selectedCompanies);
 
       expect(selectedCompanies).toEqual([{ name: 'Company A' }, { name: 'Company B' }]);
     });
