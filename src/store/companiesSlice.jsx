@@ -39,7 +39,6 @@ export const fetchCompaniesByCountry = (country) => async (dispatch) => {
 
     dispatch(setCompanies(companies));
   } catch (error) {
-    console.log('Error fetching companies:', error);
     dispatch(setLoading()); // Reset loading state to false in case of an error
   }
 };

@@ -47,7 +47,6 @@ export const fetchCountries = () => async (dispatch) => {
 
     dispatch(setCountries(countries));
   } catch (error) {
-    console.log('Error fetching countries:', error);
     dispatch(setLoading()); // Reset loading state to false in case of an error
   }
 };
