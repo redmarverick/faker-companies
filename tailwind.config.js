@@ -16,8 +16,8 @@ module.exports = {
         sans: ['Roboto', 'Arial', 'sans-serif'],
       },
       spacing: {
-        '72': '18rem',
-        '84': '21rem',
+        72: '18rem',
+        84: '21rem',
       },
       // Add more customizations as needed
     },

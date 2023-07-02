@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCountries, selectCountries } from '../store/countriesSlice';
 import Header from './Header';
@@ -10,16 +9,20 @@ function Home() {
   const countries = useSelector(selectCountries);
 
   useEffect(() => {
-    dispatch(fetchCountries());
-  }, [dispatch]);
+    if (!countries || countries.length === 0) {
+      dispatch(fetchCountries());
+    }
+  }, [dispatch, countries]);
+
+  const memoizedCountries = useMemo(() => countries, [countries]);
 
   return (
     <div>
       <Header title="Companies per Countries" showBackButton={false} />
       <div id="content" className="grid grid-cols-2">
-      {countries.map((country) => (
-        <CountryItem key={country.name} country={country} />
-      ))}
+        {memoizedCountries && memoizedCountries.map((country) => (
+          <CountryItem key={country.name} country={country} />
+        ))}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchCompaniesByCountry, selectCompanies } from '../store/companiesSlice';
 import { useDispatch, useSelector } from 'react-redux';
@@ -18,23 +18,31 @@ function Details() {
   const dispatch = useDispatch();
   const companies = useSelector(selectCompanies);
 
-  // Get image source using getISOCode and getImagePath functions
-  const isoCode = getISOCode(country);
-  const imagePath = getImagePath(isoCode);
-
-  // Remove text between parentheses and trim whitespace
-  const displayName = country.replace(/\s*\([^)]*\)/g, '').trim();
+  const isoCode = useMemo(() => getISOCode(country), [country]);
+  const imagePath = useMemo(() => getImagePath(isoCode), [isoCode]);
 
   useEffect(() => {
     dispatch(fetchCompaniesByCountry(country));
   }, [country, dispatch]);
+
+  const displayName = useMemo(() => {
+    const removeTextBetweenParentheses = (str) => {
+      const startIndex = str.indexOf('(');
+      const endIndex = str.indexOf(')');
+      if (startIndex !== -1 && endIndex !== -1) {
+        return str.slice(0, startIndex).trim() + str.slice(endIndex + 1).trim();
+      }
+      return str.trim();
+    };
+
+    return removeTextBetweenParentheses(country);
+  }, [country]);
 
   return (
     <div>
       <Header title={`${displayName} Companies`} showBackButton={true} />
       <div className="flex h-2/3 justify-around items-center bg-light-pink">
         <div className="w-36 p-2">
-          {/* Display image using imagePath */}
           <img className="h-3/4" src={imagePath} alt={displayName} />
         </div>
         <div className="w-1/2 flex items-center justify-center">

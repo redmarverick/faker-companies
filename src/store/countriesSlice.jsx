@@ -26,7 +26,9 @@ export const fetchCountries = () => async (dispatch) => {
   try {
     dispatch(setLoading()); // Set loading state to true
 
-    const response = await axios.get(`https://fakerapi.it/api/v1/companies?_quantity=200&_seed=42069`);
+    const response = await axios.get(
+      `https://fakerapi.it/api/v1/companies?_quantity=200&_seed=42069`
+    );
     const data = response.data.data;
 
     const countryCounts = data.reduce((acc, company) => {

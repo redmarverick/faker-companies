@@ -22,7 +22,6 @@ export const getISOCode = (country) => {
 };
 
 export const getImagePath = (isoCode) => {
-  // Retorne o caminho relativo para a imagem apropriada
   const imagePath = `/images/${isoCode.toLowerCase()}/vector.svg`;
   return imagePath;
 };
@@ -33,11 +32,9 @@ export const CountryItem = ({ country }) => {
   const isoCode = getISOCode(name);
   const imagePath = getImagePath(isoCode);
 
-  // Remove text between parentheses and trim whitespace
-  const displayName = name; //;
+  const displayName = name;
 
   useEffect(() => {
-    // Check if folder exists
     fetch(`/images/${isoCode.toLowerCase()}`, { method: 'HEAD' })
       .then((res) => {
         if (res.ok) {
@@ -57,7 +54,6 @@ export const CountryItem = ({ country }) => {
         className="w-full h-48 relative country-item pt-2"
       >
         <div className="w-full absolute h-2/3 bg-center bg-contain bg-no-repeat" style={{ backgroundImage: `url(${imagePath})` }} />
-        {/* Adicione um contêiner ao redor da segunda <div> */}
         <div className="absolute bottom-0 right-2 flex justify-end items-end">
           <div className="flex flex-col items-end">
             <h2 className="text-md font-bold text-right text-white mb-2">{displayName.toUpperCase().replace(/\s*\([^)]*\)/g, '').trim()}</h2>

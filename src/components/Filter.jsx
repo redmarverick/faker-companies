@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Filter from './Filter';
 
-function Filter({ onFilterChange }) {
-  const handleFilterChange = (event) => {
-    onFilterChange(event.target.value);
+function App() {
+  const [filterValue, setFilterValue] = useState('');
+
+  const handleFilterChange = (value) => {
+    setFilterValue(value);
   };
 
   return (
     <div>
-      <input type="text" placeholder="Filter by category name" onChange={handleFilterChange} />
+      <h1>My App</h1>
+      <Filter onFilterChange={handleFilterChange} />
     </div>
   );
 }
 
-export default Filter;
+export default App;
