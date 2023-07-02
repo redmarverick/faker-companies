@@ -82,14 +82,8 @@ Clone this repository to your desired folder and install required dependencies:
 ```sh
   cd my-folder
   git clone github.com/redmarverick/MMDB.git
+  npm install
 
-  npm init -y
-  npm install webpack webpack-cli --save-dev
-  npm install --save-dev html-webpack-plugin
-  npm install --save-dev html-loader 
-
-  npm install --save-dev style-loader css-loader
-  npm install --save-dev webpack-dev-server
 ```
 
 ### Usage

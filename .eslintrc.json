@@ -40,7 +40,9 @@
     "react/prop-types": "off",
     "import/no-named-as-default": "off",
     "import/prefer-default-export": "off",
-    "react/jsx-indent": "off"
+    "react/jsx-indent": "off",
+    "react/jsx-no-undef": "off",
+    "no-console": "off"
   },
   "overrides": [
     {
