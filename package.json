@@ -35,9 +35,7 @@
         "build": "react-scripts build",
         "test": "jest",
         "eject": "react-scripts eject",
-        "deploy": "gh-pages -d build",
-        "homepage": "https://redmarverick.github.io/faker-companies"
-
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [

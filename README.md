@@ -1,165 +1,70 @@
-<a name="readme-top"></a>
-<div align="center">
-  <h1><b>Faker Companies</b></h1>
-</div>
+# Getting Started with Create React App
 
-<!-- TABLE OF CONTENTS -->
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# 📗 Table of Contents
+## Available Scripts
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+In the project directory, you can run:
 
-<!-- PROJECT DESCRIPTION -->
+### `npm start`
 
-# 📖 MMDB <a name="about-project"></a>
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-**Faker Companies** is a project made to filter giant data from API in a fast and efficient way following a design guideline.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## 🛠 Built With <a name="built-with"></a>
+### `npm test`
 
-- HTML
-- CSS
-- JavaScript
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Tech Stack <a name="tech-stack"></a>
+### `npm run build`
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a></li>
-    <li><a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript">JavaScript</a></li>
-  </ul>
-</details>
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Key Features <a name="key-features"></a>
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- **Use Webpack**
-- **Use ES6**
-- **Use Callbacks and Promisses**
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### `npm run eject`
 
-## 🚀 Live Demo <a name="live-demo"></a>
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-> comming soon!
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## 💻 Getting Started <a name="getting-started"></a>
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-To get a local copy up and running, follow these steps.
+## Learn More
 
-### Prerequisites
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-In order to run this project you need:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-1. Web browser.
-2. Code editor.
-3. Git
+### Code Splitting
 
-### Setup
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Clone this repository to your desired folder and install required dependencies:
+### Analyzing the Bundle Size
 
-```sh
-  cd my-folder
-  git clone github.com/redmarverick/MMDB.git
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-  npm init -y
-  npm install webpack webpack-cli --save-dev
-  npm install --save-dev html-webpack-plugin
-  npm install --save-dev html-loader 
+### Making a Progressive Web App
 
-  npm install --save-dev style-loader css-loader
-  npm install --save-dev webpack-dev-server
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Usage
+### Advanced Configuration
 
-To run the project, execute the following command:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-```sh
-  npm install
-  npm build
-  npm start
-```
+### Deployment
 
-### Run tests
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-To run tests, run the following command:
+### `npm run build` fails to minify
 
-> Comming soon.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
-
-## 👥 Authors <a name="authors"></a>
-
-👤 **Nylbert Victor**
-
-- GitHub: [@Nylbert Victor](https://github.com/redmarverick)
-- Twitter: [@Nylbert Victor](https://twitter.com/MarverickRed)
-- LinkedIn: [Nylbert Victor](https://www.linkedin.com/in/nylbert-victor-397951120/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **[Add Countries Maps]**
-- [ ] **[Add Countries Companies]**
-- [ ] **[Work Design]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/redmarverick/MMDB/issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
-
-Thanks for checking out our books app! Please feel free to reach out with any questions or feedback, as your input is greatly appreciated. And if you enjoyed the project, don't forget to leave a star on the repo ⭐️.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-would like to thanks Microverse corporation for the README template.<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-<!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
