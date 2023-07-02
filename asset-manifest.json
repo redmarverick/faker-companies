@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "http://localhost:3000/static/css/main.dd816e51.css",
+    "main.js": "http://localhost:3000/static/js/main.9c095535.js",
+    "static/media/Gill Sans Heavy.otf": "http://localhost:3000/static/media/Gill Sans Heavy.012e3b883ea5cafac6b9.otf",
+    "static/media/Gill Sans Italic.otf": "http://localhost:3000/static/media/Gill Sans Italic.93d85806cae964784080.otf",
+    "static/media/Gill Sans.otf": "http://localhost:3000/static/media/Gill Sans.0c3ea264fff3ef2bfce7.otf",
+    "static/media/Gill Sans Heavy Italic.otf": "http://localhost:3000/static/media/Gill Sans Heavy Italic.bc23f2eb4b551b9bfad6.otf",
+    "static/media/Gill Sans Medium Italic.otf": "http://localhost:3000/static/media/Gill Sans Medium Italic.d30383b21b4159765e8f.otf",
+    "static/media/Gill Sans Bold Italic.otf": "http://localhost:3000/static/media/Gill Sans Bold Italic.e0c4baf128881e0a8c90.otf",
+    "static/media/Gill Sans Light Italic.otf": "http://localhost:3000/static/media/Gill Sans Light Italic.377d6a479641f09efb23.otf",
+    "static/media/Gill Sans Bold.otf": "http://localhost:3000/static/media/Gill Sans Bold.6110e26abc5eece5ce42.otf",
+    "static/media/Gill Sans Medium.otf": "http://localhost:3000/static/media/Gill Sans Medium.6d4fc7f84156dec0ed02.otf",
+    "static/media/Gill Sans Light.otf": "http://localhost:3000/static/media/Gill Sans Light.7c646be8fc05ea0651f1.otf",
+    "static/media/GillSans Condensed Bold.otf": "http://localhost:3000/static/media/GillSans Condensed Bold.4d50d774764b7e9e91c1.otf",
+    "static/media/GillSans Condensed.otf": "http://localhost:3000/static/media/GillSans Condensed.dcde94d14abb6eb8a340.otf",
+    "index.html": "http://localhost:3000/index.html",
+    "main.dd816e51.css.map": "http://localhost:3000/static/css/main.dd816e51.css.map",
+    "main.9c095535.js.map": "http://localhost:3000/static/js/main.9c095535.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd816e51.css",
+    "static/js/main.9c095535.js"
+  ]
+}
