@@ -1,9 +1,9 @@
-import { getImagePath } from '../components/CountryItem';
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
-import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import '@testing-library/jest-dom';
+import { render, screen } from '@testing-library/react';
+import { useParams } from 'react-router-dom';
+import { getImagePath } from '../components/CountryItem';
 import Details from '../components/Details';
 import { fetchCompaniesByCountry, selectCompanies } from '../store/companiesSlice';
 
