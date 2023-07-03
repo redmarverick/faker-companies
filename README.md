@@ -1,6 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
   <h1><b>Faker Companies</b></h1>
+  <img src="./public/images/Faker companies preview.png"/>
 </div>
 
 <!-- TABLE OF CONTENTS -->
