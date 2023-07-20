@@ -131,7 +131,7 @@ Feel free to check the [issues page](https://github.com/redmarverick/Faker-Compa
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Thanks for checking out our books app! Please feel free to reach out with any questions or feedback, as your input is greatly appreciated. And if you enjoyed the project, don't forget to leave a star on the repo ⭐️.
+Thanks for checking out my countries app! Please feel free to reach out with any questions or feedback, as your input is greatly appreciated. And if you enjoyed the project, don't forget to leave a star on the repo ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
